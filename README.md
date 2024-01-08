@@ -2,7 +2,7 @@
 
 # ProductiVue
 
-![ProductiVue](public\ProductiVue.jpg)
+![ProductiVue](./public/ProductiVue.webp)
 
 Minimalistic Peripheral View for my Productivity Sessions
 
