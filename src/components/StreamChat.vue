@@ -1,5 +1,7 @@
 <script lang="ts">
-import { StreamerbotClient } from "@streamerbot/client";
+import {
+    StreamerbotClient
+} from "@streamerbot/client";
 import {
     ref,
     defineComponent
@@ -20,7 +22,7 @@ export default defineComponent({
             if (data.event.source === "YouTube" && data.event.type === "Message") {
                 const payload = data.data;
                 // const source:string = data.event.source.toLowerCase();
-                const user:string = payload.user.name;
+                const user: string = payload.user.name;
 
                 pushToChat(user, payload.message);
             } else if (
@@ -32,7 +34,7 @@ export default defineComponent({
                 const user = payload.message.displayName;
 
                 pushToChat(user, payload.message.message)
-            } 
+            }
         }
 
         new StreamerbotClient({

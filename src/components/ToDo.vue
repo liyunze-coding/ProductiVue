@@ -55,8 +55,7 @@ export default {
                     <div class="w-4 h-4 
                         border-white border border-solid 
                         mr-3 rounded-full
-                        cursor-pointer" 
-                        @click="() => completeTodo(index)">
+                        cursor-pointer" @click="() => completeTodo(index)">
                         <span v-if="(todo as ToDo).completed" class="translate-x-[2px] -translate-y-2 absolute select-none">✓</span>
                     </div>
                     <div :class="{'line-through' : (todo as ToDo).completed}">{{ (todo as ToDo).task }}</div>

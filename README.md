@@ -1,16 +1,65 @@
-# Tauri + Vue 3 + TypeScript
+<center>
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+# ProductiVue
 
-## Recommended IDE Setup
+![ProductiVue](public\ProductiVue.webp)
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+Minimalistic Peripheral View for my Productivity Sessions
 
-## Type Support For `.vue` Imports in TS
+![Vue.js Badge](https://img.shields.io/badge/Vue.js-4FC08D?logo=vuedotjs&logoColor=fff&style=for-the-badge)
+![Tauri Badge](https://img.shields.io/badge/Tauri-24C8D8?logo=tauri&logoColor=fff&style=for-the-badge)
+![TypeScript Badge](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff&style=for-the-badge)
+![Rust Badge](https://img.shields.io/badge/Rust-000?logo=rust&logoColor=fff&style=for-the-badge)
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's Take Over mode by following these steps:
+</center>
 
-1. Run `Extensions: Show Built-in Extensions` from VS Code's command palette, look for `TypeScript and JavaScript Language Features`, then right click and select `Disable (Workspace)`. By default, Take Over mode will enable itself if the default TypeScript extension is disabled.
-2. Reload the VS Code window by running `Developer: Reload Window` from the command palette.
+## About
 
-You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/volar/discussions/471).
+My goals for ProductiVue are:
+
+- To provide a customizable, minimalistic view on my second monitor
+- To be able to view chat from YouTube Live and Twitch stream in one source
+- To practice my Vue, Typescript and Rust skills
+
+## Setup
+
+Download via git:
+
+```
+git clone https://github.com/liyunze-coding/ProductiVue.git
+```
+
+If you do not have pnpm:
+
+```
+npm install -g pnpm
+```
+
+Install via pnpm:
+
+```
+pnpm install
+```
+
+Start with Tauri (web and desktop app view):
+
+```
+pnpm run tauri dev
+```
+
+Or web view only
+
+```
+pnpm run dev
+```
+
+Build and get installer.exe in `src-tauri/target/release/bundle/nsis/ProductiVue_x.x.x_x64-setup.exe`:
+
+```
+pnpm run tauri build
+```
+
+## Notes
+
+Can be compiled to work on the web, Windows, macOS and Linux.
+

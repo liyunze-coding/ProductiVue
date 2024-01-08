@@ -1,5 +1,4 @@
 <script setup lang="ts">
-// import Greet from "./components/Greet.vue";
   import Locale from "./components/Locale.vue";
   import Time from "./components/Time.vue";
   import StreamChat from "./components/StreamChat.vue";
