@@ -1,4 +1,4 @@
-<center>
+<div align="center">
 
 # ProductiVue
 
@@ -11,7 +11,7 @@ Minimalistic Peripheral View for my Productivity Sessions
 ![TypeScript Badge](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff&style=for-the-badge)
 ![Rust Badge](https://img.shields.io/badge/Rust-000?logo=rust&logoColor=fff&style=for-the-badge)
 
-</center>
+</div>
 
 ## About
 
